@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generator</title>
+  </head>
+  <body>
+
+    <h1>Random Passwords</h1>
+
+    <script>
+
+
+confirm('Create a Password?') 
+
+var char = 'abcdefghijklmnopqrstuvwyxz123456789!@#$$%^&*_:?><ABCDEFGHIJKLMNOPQRSTUVWYXZ'
+var howmany = prompt('how many characters long would you like it to be?')
+
+
+
+
+ alert(password(howmany,char));
+
+
+
+
+function password(l,char){
+
+    let pwd = "";
+    
+    for(var i = 0; i <l; i++){
+        pwd += char.charAt(Math.floor(Math.random() * char.length));
+    }
+    return pwd;
+}
+     
+
+  
+    </script>
+    
+  </body>
+</html>
+
